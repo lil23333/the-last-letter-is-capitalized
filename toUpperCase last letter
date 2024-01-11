@@ -1,0 +1,11 @@
+let str =  'ffa iia gga ppa';
+let newStr = str
+.trim()
+.split(/\s+/)
+.map(i => {
+return i.slice(0,-1) + i[i.length - 1].toUpperCase() ;
+})
+.join(' ');
+
+
+console.log(newStr);
